@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid #000;
 }
 
 .container{
@@ -367,8 +368,10 @@ nav .container{
 .section{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 24px;
+    width: 832px;
+    height: 278px;
 }
 
 .section::before{
@@ -391,16 +394,6 @@ nav .container{
 
 .section h3, .section p{
     text-align: start;
-}
-
-.section:nth-child(odd) .section-text{
-    margin-left: 35.5px;
-    width: 500px;
-}
-
-.section:nth-child(even) .section-text{
-    margin-right: 35.5px;
-    width: 500px;
 }
 
 
