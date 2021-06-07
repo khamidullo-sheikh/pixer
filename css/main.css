@@ -356,6 +356,7 @@ nav .container{
     align-items: center;
     flex-direction: column;
 }
+
 .second-content{
     text-align: center;
     padding-bottom: 56px;
@@ -368,10 +369,17 @@ nav .container{
 .section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 24px;
     width: 832px;
     height: 278px;
+}
+
+.section:nth-child(odd) .text-section{
+    order: ;
+}
+
+.section:nth-child(even) ,.text-section{
+    order: ;
 }
 
 .section::before{
@@ -385,12 +393,25 @@ nav .container{
 }
 
 .section:first-child::before{
-    background-image: url(../img/step-illlustration.svg);
+    
 }
 
 .section:nth-child(2)::before{
-    background-image: url(../img/step-illlustration2.svg);
+    
 }
+
+.section:nth-child(3)::before{
+    
+}
+
+.section:nth-child(4)::before{
+    
+}
+
+.section:last-child::before{
+    
+}
+
 
 .section h3, .section p{
     text-align: start;
@@ -487,12 +508,6 @@ select{
 
 .page-link:active{
     color: rgb(0, 108, 148);
-}
-
-.page-item .page-link:active~ .icon-telegram::before,
-.page-item .page-link:active~ .icon-facebook::before,
-.page-item .page-link:active~ .icon-instagram::before{
-    color: #A3A3A3;
 }
 
 .page-item{
