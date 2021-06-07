@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0px solid #000000;
 }
 
 .container{
@@ -86,6 +85,11 @@ p{
     border-bottom: 3px solid #000 !important;
 }
 
+.active:active{
+    background-color: transparent !important;
+    color: #000 !important;
+}
+
 .card,.box1{
     -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
@@ -111,26 +115,23 @@ nav .container{
 }
 
 .nav-brand a{
-    position: relative;
     display: block;
     height: 20px;
     width: 60px;
     cursor: pointer;
 }
 
-.nav-brand a img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
+.nav-brand a:hover{
+    opacity: .8;
 }
 
-.nav-brand a:link img:nth-child(3),
-.nav-brand a:hover img:nth-child(2),
-.nav-brand a:active img:nth-child(1){
-    visibility: visible;
+.nav-brand a:active{
+    opacity: .5;
+}
+
+.nav-brand a img{
+    width: 100%;
+    height: 100%;
 }
 
 .nav-menu{
@@ -159,7 +160,7 @@ nav .container{
     color: #fff;
 }
 
-.nav-item:last-child>.nav-link{
+.nav-item:last-child .nav-link{
     padding: 8px 16px;
     background-color: #00BAFC;
     color: #fff;
@@ -168,15 +169,15 @@ nav .container{
     transition: .1s;
 }
 
-.nav-item:last-child>.nav-link:hover{
+.nav-item:last-child .nav-link:hover{
     background-color: transparent;
     color: #00BAFC;
 }
 
-.nav-item:last-child>.nav-link:active{
-    border-color: transparent;
-    color: #fff;
-    background-color: rgba(0, 186, 252, 0.6);
+.nav-item:last-child .nav-link:active{
+    border-color: transparent !important;
+    color: #fff !important;
+    background-color: rgba(0, 186, 252, 0.6) !important;
 }
 
 #dr{
@@ -185,7 +186,7 @@ nav .container{
 
 .drop-down{
     position: absolute;
-    bottom: -195px;
+    top: 59px;
     left: -13px;
     background-color: #fff;
     width: 122px;
@@ -243,7 +244,9 @@ nav .container{
 }
 
 .frame-section iframe{
-    background: url("../img/youtube-embed.svg");
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 
@@ -261,12 +264,13 @@ nav .container{
 .first-content p{
     text-align: center;
 }
-/*.first-content a:last-child*/
+
 .link{
     margin-left: 16px;
     color: #00BAFC;
     text-decoration: underline;
 }
+
 .cards{
     display: flex;
     justify-content: center;
@@ -280,6 +284,38 @@ nav .container{
     text-align: center;
     margin-left: 35px;
     transition: .1s;
+}
+
+.card:before{
+    content: '';
+    width: 202px;
+    height: 130px;
+    display: block;
+    background-position: center;
+    background-size: 202px 130px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.card:nth-child(1):before{
+    background-image: url(../img/website-illustration.svg);
+}
+
+.card:nth-child(2):before{
+    background-image: url(../img/bot-illustration.svg);
+}
+
+.card:nth-child(3):before{
+    background-image: url(../img/smm-illustration.svg);
+}
+
+.card:nth-child(4):before{
+    background-image: url(../img/design-illustration.svg);
+}
+
+.card:nth-child(5):before{
+    background-image: url(../img/crm-illustration.svg);
 }
 
 .card:hover,
@@ -333,6 +369,24 @@ nav .container{
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
+}
+
+.section::before{
+    content: '';
+    width: 300px;
+    height: 278px;
+    display: block;
+    background-position: center;
+    background-size: 300px 278px;
+    background-repeat: no-repeat;
+}
+
+.section:first-child::before{
+    background-image: url(../img/step-illlustration.svg);
+}
+
+.section:nth-child(2)::before{
+    background-image: url(../img/step-illlustration2.svg);
 }
 
 .section h3, .section p{
