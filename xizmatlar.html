@@ -6,21 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
-    <link rel="stylesheet" href="icon/style.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/xizmatlar.css" type="text/css">
-    <title>Document</title>
+    <title>Pixer | Xizmatlar</title>
 </head>
 <body>
 	<nav>
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html"></a>
+                <a href="index.html">
+                    <img src="img/brand.svg" alt="brand">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Bosh sahifa</a></li>
                 <li id="dr" class="nav-item">
-                    <a href="#" class="nav-link active">Xizmatlar</a>
+                    <a href="xizmatlar.html" class="nav-link active">Xizmatlar</a>
                     <ul class="drop-down border">
                         <li class="drop-item"><a href="#" class="drop-link">Vebsayt</a></li>
                         <li class="drop-item"><a href="#" class="drop-link">Telegram bott</a></li>
@@ -29,13 +30,14 @@
                         <li class="drop-item"><a href="#" class="drop-link">CRM tizim</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Jamoa</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Kontaktlar</a></li>
-                <li class="nav-item"><a href="#" class="nav-link border">+998 90 921 37 11</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="jamoa.html" class="nav-link">Jamoa</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="kontaktlar.html" class="nav-link">Kontaktlar</a></li>
+                <li class="nav-item"><a href="tel:+998 90 921 37 11" class="nav-link border">+998 90 921 37 11</a></li>
             </ul>
-        </div></nav>
+        </div>
+    </nav>
 
     <section class="banner">
     	<h1>
@@ -43,13 +45,11 @@
     	</h1>
     	<p>
     		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis. Vivamus in sem <br> rhoncus, bibendum sapien in, placerat mi. Praesent tempus faucibus risus in imperdiet. Integer elementum justo sit <br> amet odio tincidunt, a pellentesque massa condimentum.
-    	</p></section>
+    	</p>
+	</section>
     <section class="content">
 		<div class="box1 border">
-			<div class="box-image">
-				<img src="img/website-illustration.svg" alt="Website">
-			</div>
-			<div class="box-text">
+			<div class="box-text" id="saytTuzish">
 				<h3>
 					Sayt tuzish
 				</h3>
@@ -57,19 +57,16 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis
 				</p>
 				<ul class="box-list">
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>lending</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>vizitka</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>korporativ</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>internet do’kon</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>maxsus</p></li>
+					<li class="box-item"><p>lending</p></li>
+					<li class="box-item"><p>vizitka</p></li>
+					<li class="box-item"><p>korporativ</p></li>
+					<li class="box-item"><p>internet do’kon</p></li>
+					<li class="box-item"><p>maxsus</p></li>
 				</ul>
-				<a href="#" class="btn border">Buyurtma berish</a>
+				<a href="#buyurtmaBerish" class="btn border">Buyurtma berish</a>
 				<a href="#" class="link">Batafsil ma’lumot</a>
 			</div></div>
 		<div class="box1 border">
-			<div class="box-image">
-				<img src="img/bot-illustration.svg" alt="Website">
-			</div>
 			<div class="box-text">
 				<h3>
 					Telegram bot tuzish
@@ -78,20 +75,17 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis
 				</p>
 				<ul class="box-list">
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>kontakt bot</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>ballar yig’ish</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>yetkazib berish</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>Telegram oldi-sotdi</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>ovoz bilan ishlash</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>maxsus</p></li>
+					<li class="box-item"><p>kontakt bot</p></li>
+					<li class="box-item"><p>ballar yig’ish</p></li>
+					<li class="box-item"><p>yetkazib berish</p></li>
+					<li class="box-item"><p>Telegram oldi-sotdi</p></li>
+					<li class="box-item"><p>ovoz bilan ishlash</p></li>
+					<li class="box-item"><p>maxsus</p></li>
 				</ul>
-				<a href="#" class="btn border">Buyurtma berish</a>
+				<a href="#buyurtmaBerish" class="btn border">Buyurtma berish</a>
 				<a href="#" class="link">Batafsil ma’lumot</a>
 			</div></div>
 		<div class="box1 border">
-			<div class="box-image">
-				<img src="img/smm-illustration.svg" alt="SMM">
-			</div>
 			<div class="box-text">
 				<h3>
 					SMM
@@ -100,19 +94,16 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis
 				</p>
 				<ul class="box-list">
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>Facebook</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>Instagram</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>TikTok</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>reklamalarni sozlash</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>aksiyalar uyushtirish</p></li>
+					<li class="box-item"><p>Facebook</p></li>
+					<li class="box-item"><p>Instagram</p></li>
+					<li class="box-item"><p>TikTok</p></li>
+					<li class="box-item"><p>reklamalarni sozlash</p></li>
+					<li class="box-item"><p>aksiyalar uyushtirish</p></li>
 				</ul>
-				<a href="#" class="btn border">Buyurtma berish</a>
+				<a href="#buyurtmaBerish" class="btn border">Buyurtma berish</a>
 				<a href="#" class="link">Batafsil ma’lumot</a>
 			</div></div>
 		<div class="box1 border">
-			<div class="box-image">
-				<img src="img/design-illustration.svg" alt="Design">
-			</div>
 			<div class="box-text">
 				<h3>
 					Grafik dizayn
@@ -121,18 +112,15 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis
 				</p>
 				<ul class="box-list">
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>logotip</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>korporativ stil</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>brending</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>ijtimoiy tarmoq sahifalari uchun posterlar</p></li>
+					<li class="box-item"><p>logotip</p></li>
+					<li class="box-item"><p>korporativ stil</p></li>
+					<li class="box-item"><p>brending</p></li>
+					<li class="box-item"><p>ijtimoiy tarmoq sahifalari uchun posterlar</p></li>
 				</ul>
-				<a href="#" class="btn border">Buyurtma berish</a>
+				<a href="#buyurtmaBerish" class="btn border">Buyurtma berish</a>
 				<a href="#" class="link">Batafsil ma’lumot</a>
 			</div></div>
 		<div class="box1 border">
-			<div class="box-image">
-				<img src="img/crm-illustration.svg" alt="CRM">
-			</div>
 			<div class="box-text">
 				<h3>
 					CRM tizimlar
@@ -141,81 +129,78 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium orci nec neque finibus mattis
 				</p>
 				<ul class="box-list">
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>do’konlar va omborlar</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>oshxona, kafe va restoranlar</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>shaxsiy hisob-kitoblar</p></li>
-					<li class="box-item"><img src="icon/rectangle 3.svg"><p>maxsus</p></li>
+					<li class="box-item"><p>do’konlar va omborlar</p></li>
+					<li class="box-item"><p>oshxona, kafe va restoranlar</p></li>
+					<li class="box-item"><p>shaxsiy hisob-kitoblar</p></li>
+					<li class="box-item"><p>maxsus</p></li>
 				</ul>
-				<a href="#" class="btn border">Buyurtma berish</a>
+				<a href="#buyurtmaBerish" class="btn border">Buyurtma berish</a>
 				<a href="#" class="link">Batafsil ma’lumot</a>
-			</div></div></section>
+			</div>
+		</div>
+	</section>
 
-    <footer>
-        <section class="top">
-            <div class="container">
-                <h2 id="h2">
-                    Buyurtma berish
-                </h2>
-                <p>
-                    Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget <br> sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
-                </p>
-                <form action="#" method="get" class="form border">
-                    <input type="text" placeholder="Ismingiz" required>
-                    <input type="text" placeholder="Telefon raqamingiz" required>
-                    <select>
-                        <option value="1">Xizmat turi</option>
-                    </select>
-                    <button type="submit" class="btn border">Buyurtma berish</button>
-                </form>
-            </div>
-        </section>
-        <section class="bottom">
-            <div class="container">
-                <div class="box">
-                    <h3>
-                        Copyright 2020
-                    </h3>
-                    <p>
-                        Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.
-                    </p>
-                </div>
-                <div class="box">
-                    <h3>
-                        Sayt sahifalari
-                    </h3>
-                    <ul class="list-page">
-                        <li><a href="#" class="page-link">Bosh sahifa</a></li>
-                        <li><a href="#" class="page-link">Xizmatlar</a></li>
-                        <li><a href="#" class="page-link">Portfolio</a></li>
-                        <li><a href="#" class="page-link">Jamoa</a></li>
-                        <li><a href="#" class="page-link">Blog</a></li>
-                        <li><a href="#" class="page-link">Kontaktlar</a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h3>
-                        Biz internetda
-                    </h3>
-                    <ul class="list-page">
-                        <li class="page-item">
-                            <a href="#" class="page-link">Telegram</a>
-                            <div class="icon icon-telegram">
-                            </div>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">Facebook</a>
-                            <div class="icon icon-facebook">
-                            </div>
-                        </li>
-                        <li class="page-item">
-                            <a href="#" class="page-link">Instagram</a>
-                            <div class="icon icon-instagram">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section></footer>
+	<footer>
+			<section class="top">
+				<div class="container" id="buyurtmaBerish">
+					<h2 id="h2">
+						Buyurtma berish
+					</h2>
+					<p>
+						Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget <br> sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
+					</p>
+					<form action="#" method="get" class="form border">
+						<input type="text" placeholder="Ismingiz" required>
+						<input type="text" placeholder="Telefon raqamingiz" required>
+						<select>
+							<option value="1">Xizmat turi</option>
+						</select>
+						<button type="submit" class="btn border">Buyurtma berish</button>
+					</form>
+				</div>
+			</section>
+			<section class="bottom">
+				<div class="container">
+					<div class="box">
+						<p>
+							Copyright 2020
+						</p>
+						<p>
+							Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar tincidunt.
+						</p>
+					</div>
+					<div class="box">
+						<p>
+							Sayt sahifalari
+						</p>
+						<ul class="list-page-left">
+							<li><a href="#" class="page-link-left">Bosh sahifa</a></li>
+							<li><a href="#" class="page-link-left">Xizmatlar</a></li>
+							<li><a href="#" class="page-link-left">Portfolio</a></li>
+							<li><a href="#" class="page-link-left">Jamoa</a></li>
+							<li><a href="#" class="page-link-left">Blog</a></li>
+							<li><a href="#" class="page-link-left">Kontaktlar</a></li>
+						</ul>
+					</div>
+					<div class="box">
+						<p>
+							Biz internetda
+						</p>
+						<ul class="list-page-right">
+							<li class="page-item-right">
+								<a href="#" class="page-link-right">Telegram</a>
+							</li>
+							<li class="page-item-right">
+								<a href="#" class="page-link-right">Facebook</a>
+							</li>
+							<li class="page-item-right">
+								<a href="#" class="page-link-right">Instagram</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+	</footer>
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/respond.min.js"></script>

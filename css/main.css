@@ -285,6 +285,7 @@ nav .container{
 .card{
     width: 320px;
     height: 260px;
+    display: block;
     text-align: center;
     margin-left: 35px;
     transition: .1s;
