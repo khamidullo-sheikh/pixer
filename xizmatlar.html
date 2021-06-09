@@ -151,11 +151,11 @@
 					<p>
 						Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget <br> sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
 					</p>
-					<form action="#" method="get" class="form border">
-						<input type="text" placeholder="Ismingiz" required>
-						<input type="text" placeholder="Telefon raqamingiz" required>
+					<form action="#" method="POST" class="form border">
+						<input type="text" placeholder="Ismingiz" required name="name" aria-label="Ismingiz">
+						<input type="tel" placeholder="Telefon raqamingiz" required name="tel" aria-label="Telefon raqamingiz">
 						<select>
-							<option value="1">Xizmat turi</option>
+							<option value="xizmat-tiri" selected>Xizmat turi</option>
 						</select>
 						<button type="submit" class="btn border">Buyurtma berish</button>
 					</form>
