@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -25,18 +23,18 @@
                 <li id="dr" class="nav-item">
                     <a href="xizmatlar.html" class="nav-link active">Xizmatlar</a>
                     <ul class="drop-down border">
-                        <li class="drop-item"><a href="#" class="drop-link">Vebsayt</a></li>
-                        <li class="drop-item"><a href="#" class="drop-link">Telegram bott</a></li>
-                        <li class="drop-item"><a href="#" class="drop-link">SMM</a></li>
-                        <li class="drop-item"><a href="#" class="drop-link">Grafik dizayn</a></li>
-                        <li class="drop-item"><a href="#" class="drop-link">CRM tizim</a></li>
+                        <li class="drop-item"><a href="sayt-tuzish.html" class="drop-link">Vebsayt</a></li>
+                        <li class="drop-item"><a href="telegram-bot.html" class="drop-link">Telegram bott</a></li>
+                        <li class="drop-item"><a href="SMM.html" class="drop-link">SMM</a></li>
+                        <li class="drop-item"><a href="grafik-dizayn.html" class="drop-link">Grafik dizayn</a></li>
+                        <li class="drop-item"><a href="CRM-tizim.html" class="drop-link">CRM tizim</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                 <li class="nav-item"><a href="jamoa.html" class="nav-link">Jamoa</a></li>
                 <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="kontaktlar.html" class="nav-link">Kontaktlar</a></li>
-                <li class="nav-item"><a href="tel:+998 90 921 37 11" class="nav-link border">+998 90 921 37 11</a></li>
+                <li class="nav-item"><a href="tel:+998909213711" class="nav-link border">+998 90 921 37 11</a></li>
             </ul>
         </div>
     </nav>
@@ -151,17 +149,23 @@
 					<p>
 						Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget <br> sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
 					</p>
-					<form action="#" method="POST" class="form border">
+					<form action="https://echo.htmlacademy.ru/" method="POST" class="form border">
 						<input type="text" placeholder="Ismingiz" required name="name" aria-label="Ismingiz">
 						<input type="tel" placeholder="Telefon raqamingiz" required name="tel" aria-label="Telefon raqamingiz">
-						<select>
-							<option value="xizmat-tiri" selected>Xizmat turi</option>
+						<label for="service" id="service-label">Xizmat tiri</label>
+						<select required name="service" id="service">
+							<option selected disabled value="">Xizmat turi</option>
+							<option value="sayt-tuzish">Sayt tuzish</option>
+							<option value="telegram-bot">Telegram bot</option>
+							<option value="smm">SMM</option>
+							<option value="grafik-dizayn">Grafik dizayn</option>
+							<option value="crm-tizim">CRM tizim</option>
 						</select>
 						<button type="submit" class="btn border">Buyurtma berish</button>
 					</form>
 				</div>
 			</section>
-			<section class="bottom">
+			<div class="bottom">
 				<div class="container">
 					<div class="box">
 						<p>
@@ -176,12 +180,12 @@
 							Sayt sahifalari
 						</p>
 						<ul class="list-page-left">
-							<li><a href="#" class="page-link-left">Bosh sahifa</a></li>
-							<li><a href="#" class="page-link-left">Xizmatlar</a></li>
-							<li><a href="#" class="page-link-left">Portfolio</a></li>
-							<li><a href="#" class="page-link-left">Jamoa</a></li>
-							<li><a href="#" class="page-link-left">Blog</a></li>
-							<li><a href="#" class="page-link-left">Kontaktlar</a></li>
+							<li><a href="index.html" class="page-link-left">Bosh sahifa</a></li>
+							<li><a href="xizmatlar.html" class="page-link-left">Xizmatlar</a></li>
+							<li><a href="portfolio.html" class="page-link-left">Portfolio</a></li>
+							<li><a href="jamoa.html" class="page-link-left">Jamoa</a></li>
+							<li><a href="blog.html" class="page-link-left">Blog</a></li>
+							<li><a href="kontaktlar.html" class="page-link-left">Kontaktlar</a></li>
 						</ul>
 					</div>
 					<div class="box">
@@ -190,18 +194,18 @@
 						</p>
 						<ul class="list-page-right">
 							<li class="page-item-right">
-								<a href="#" class="page-link-right">Telegram</a>
+								<a href="#" target="_blank" class="page-link-right">Telegram</a>
 							</li>
 							<li class="page-item-right">
-								<a href="#" class="page-link-right">Facebook</a>
+								<a href="#" target="_blank" class="page-link-right">Facebook</a>
 							</li>
 							<li class="page-item-right">
-								<a href="#" class="page-link-right">Instagram</a>
+								<a href="#" target="_blank" class="page-link-right">Instagram</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</section>
+			</div>
 	</footer>
 
 <script src="js/jquery-3.6.0.min.js"></script>

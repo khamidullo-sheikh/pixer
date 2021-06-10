@@ -4,16 +4,31 @@
 /*------BASIC SETUPS-------*/
 /*-------------------------*/
 
-*{
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;;
+}
+  
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+}
+
+body{
+    font-family:'Open Sans','Arial',sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-weight: bold;
 }
 
 .container{
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 ul{
@@ -22,14 +37,6 @@ ul{
 
 a{
     text-decoration: none;
-}
-
-h1,h2,h3,p,
-.nav-link,.btn,input,select{
-    font-family: sans-serif;
-    font-style: normal;
-    color: #000000;
-    font-weight: bold;
 }
 
 h1{
@@ -54,7 +61,6 @@ h3{
 
 p{
     font-weight: 400;
-    font-style: normal;
     font-size: 100%;
     line-height: 24px;
 }
@@ -106,6 +112,9 @@ nav{
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 nav .container{
@@ -151,6 +160,7 @@ nav .container{
 }
 
 .nav-link{
+    color: #000;
     display: block;
     padding: 16px;
     text-align: center;
@@ -202,9 +212,9 @@ nav .container{
 .drop-down{
     position: absolute;
     top: 59px;
-    left: -13px;
+    left: -19px;
     background-color: #fff;
-    width: 122px;
+    width: 137px;
     padding: 8px 0;
     visibility: hidden;
     opacity: 0;
@@ -221,6 +231,7 @@ nav .container{
 .drop-down .drop-link{
     display: block;
     padding: 8px 16px;
+    font-weight: normal;
     color: #000;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -o-transition: background-color .3s ease, color .3s ease;
@@ -252,6 +263,7 @@ nav .container{
 .banner .container{
     display: -webkit-box;
     display: -ms-flexbox;
+    padding-top: 80px;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -320,6 +332,10 @@ nav .container{
     -webkit-transition: .1s;
     -o-transition: .1s;
     transition: .1s;
+}
+
+.card *{
+    color:#000;
 }
 
 .card:before{
@@ -507,6 +523,7 @@ nav .container{
     text-align: center;
     margin: 24px auto;
     margin-bottom: 0;
+    position: relative;
 }
 
 input,select{
@@ -522,6 +539,13 @@ input,select{
 
 select{
     color: #757575;
+}
+
+#service-label{
+    visibility: hidden;
+    position: absolute;
+    top: 63%;
+    right: 20%;
 }
 
 /*--------BOTTOM--------*/
